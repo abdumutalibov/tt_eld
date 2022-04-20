@@ -1,0 +1,131 @@
+.container{
+    width: 100%;
+   
+    background-color: #F8F9FA !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+    
+}
+
+.mainCard{
+  display: flex;
+    width: 60%;
+height: 100%;
+   
+}
+.card{
+    flex: 1;
+    padding-right: 0;
+}
+.title{
+
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.brand{
+    font-size: 55px;
+margin-bottom: 10px;
+
+}
+.line{
+
+    height: 2px;
+    width: 50px;
+    background-color: #FFB94A;
+    margin-left: 3px;
+  
+    margin-top: 20px;
+}
+.desc{
+    width: 440px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.F_right{
+    position: relative;
+}
+.F_img1{
+    position: absolute;
+    bottom: -15%;
+    right: 490px;
+    height: 260px;
+    z-index: 3;
+}
+.F_img2{
+    position: absolute;
+    top: 230px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 692px;
+    object-fit: cover;
+    z-index: 2;
+}
+.cont{
+    width: 100%;
+   
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+}
+.fadeInUp{
+    position: relative;
+    display: flex;
+}
+.fial{}
+.F1_img1{
+    position: absolute;
+    top: 50%;
+    left: 205px;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    width: 460px;
+    object-fit: fill !important;
+    z-index: 3;
+}
+.F2_img2 {
+  
+    height: 460px;
+    object-fit: cover;
+    z-index: 2;
+    margin-right: 320px;
+}
+.F2_imgs2 {
+   
+    height: 460px;
+    object-fit: cover;
+    z-index: 2;
+    margin-right: 85px;
+}
+.F2_right{
+}
+.lines{
+margin-top: 30px;
+    height: 3px;
+    width: 55px;
+    background-color: #FFB94A;
+margin-bottom: 35px;
+  
+}
+.feature{
+        font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.feature2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #999999;
+width: 450px;
+}

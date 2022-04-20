@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh);
+    background: url(https://tteld.com/assets/images/custom/footerBg.jpg);
+
+}
+.mainCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /* font-family: 'Oxygen', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 560;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 10px;
+    color: rgb(43, 39, 39);
+}
+.myHeader{
+       font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #696871;
+    margin-bottom: 43px;
+}
+.get{
+    margin-bottom: 56px;
+    border-radius: 26px;
+    background-color: #FFB94A;
+    color: #ffffff;
+    border-color: #FFB94A;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    width: 170px;
+    height: 45px;
+    line-height: 44px;
+}
+.get:hover{
+       transition: all 0.3s ease;
+    background-color: #c0872b;
+    color: #ffffff;
+
+}
+.logo{
+    width: 100%;
+}
