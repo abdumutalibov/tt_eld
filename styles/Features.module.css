@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 300px);
     
 }
 
@@ -16,11 +15,9 @@
   display: flex;
     width: 60%;
 height: 100%;
-   
+   justify-content: center;
 }
 .card{
-    flex: 1;
-    padding-right: 0;
 }
 .title{
 
@@ -31,7 +28,11 @@ height: 100%;
 .brand{
     font-size: 55px;
 margin-bottom: 10px;
-
+width: 55px;
+transition: all 1s ease ;
+}
+.brand:hover{
+    transform: scale(1.1);
 }
 .line{
 
@@ -47,23 +48,27 @@ margin-bottom: 10px;
     font-size: 18px;
     font-weight: 400;
     line-height: 29px;
+    color: #999999;
+
 }
 .F_right{
     position: relative;
+    display: flex;
+    margin-left: 30px;
 }
 .F_img1{
     position: absolute;
-    bottom: -15%;
-    right: 490px;
+    margin-top: 260px;
+    margin-left:-215px;
     height: 260px;
     z-index: 3;
 }
 .F_img2{
-    position: absolute;
-    top: 230px;
-    right: 0;
-    transform: translateY(-50%);
-    width: 692px;
+    /* position: absolute; */
+   margin-top: 0px;
+    margin-right: 50px;
+    /* transform: translateY(-50%); */
+    height: 452px;
     object-fit: cover;
     z-index: 2;
 }
@@ -76,7 +81,7 @@ margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 300px);
+    /* height: calc(100vh - 300px); */
 }
 .fadeInUp{
     position: relative;

@@ -1,54 +1,142 @@
-.container{
-    display: flex;
-    justify-content: center;
-    height: calc(100vh);
-    background: url(https://tteld.com/assets/images/custom/footerBg.jpg);
 
+
+.container {
+  width: 100%;
+  /* background: url(https://tteld.com/assets/images/custom/footerBg.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain; */
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  padding-bottom: 100px;
 }
-.mainCard{
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 560;
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 10px;
+  color: rgb(43, 39, 39);
+  
+}
+.myHeader {
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #696871;
+  margin-bottom: 43px;
+}
+.get {
+  margin-bottom: 56px;
+  border-radius: 26px;
+  background-color: #ffb94a;
+  color: #ffffff;
+  border-color: #ffb94a;
+  font-family: "Oxygen", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  width: 170px;
+  height: 45px;
+  line-height: 44px;
+}
+.get:hover {
+  transition: all 0.3s ease;
+  background-color: #c0872b;
+  color: #ffffff;
+}
+.logo {
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 375px){
+
+  
+  .container {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    padding: 25px 0px 25px 0;
+    width: 162vh;
+
+  }
+  .mainCard {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-.card{
-    /* font-family: 'Oxygen', sans-serif; */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 560;
-    font-size: 45px;
-    line-height: 55px;
-    margin-bottom: 10px;
-    color: rgb(43, 39, 39);
-}
-.myHeader{
-       font-size: 22px;
-    line-height: 32px;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #696871;
-    margin-bottom: 43px;
-}
-.get{
-    margin-bottom: 56px;
-    border-radius: 26px;
-    background-color: #FFB94A;
-    color: #ffffff;
-    border-color: #FFB94A;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0;
-    width: 170px;
-    height: 45px;
-    line-height: 44px;
-}
-.get:hover{
-       transition: all 0.3s ease;
-    background-color: #c0872b;
-    color: #ffffff;
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  .get{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height: 100px;
+  border-radius: 56px;
+font-size: 30px;
+  }
+  .myHeader{
+    font-size: 33px;
 
+  }
+  .logo {
+    height: 100%;
+    padding: 40px;
+  }
 }
-.logo{
-    width: 100%;
+
+
+@media screen and (min-width: 375px)and (max-width: 480px) {
+  .container {
+    width: 162vh;
+  }
+  .mainCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 58px;
+    margin-bottom: 40px;
+  }
+  .myHeader{
+    font-size: 40px;
+    margin-bottom: 80px;
+    
+  }
+  .get{
+    width: 500px;
+    border-radius: 80px;
+    height: 200px;
+    font-size: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+  }
+  .logo {
+    height: 100%;
+    padding: 40px;
+  }
 }

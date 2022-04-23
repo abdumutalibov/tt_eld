@@ -1,44 +1,229 @@
-.container{
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    background-color: rgb(249, 249, 249);
-    color: white;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
-    /* justify-content: space-evenly; */
-    /* padding: 0 100px; */
-    font-size: 18px;
-    position: sticky;
-    top: 0;
-    /* background: url(https://tteld.com/assets/images/custom/footerBg.jpg); */
-    z-index: 999;
+.containers {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  color: white;
+  font-size: 18px;
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* border: solid 1px rgb(243, 238, 238); */
+  /* box-shadow: 1px 1px 1px 1px rgb(247, 244, 244);
+  scroll-snap-type: y mandatory; */
 }
-.eld{
-    display: flex;
-    justify-content: center;
-    /* background-color: blue; */
-    align-items: center;
-width: 60%;
-    justify-content: space-between;
+
+.eld {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1140px;
+  justify-content: space-between;
+  padding: 0 0px 0 0px;
+}
+.logo {
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+.list {
+  /* margin-left: 450px; */
+  margin-left: auto;
+  /* background-color: #ff9d00; */
+  margin-top: 33px;
+}
+.a {
+  text-decoration: none;
+  color: rgb(78, 74, 74);
+  padding-bottom: 40px;
+}
+.a:hover {
+  color: rgb(78, 74, 74);
+}
+
+.listItem {
+  color: #666;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 17px;
+  color: rgb(78, 74, 74);
+  cursor: pointer;
+  padding: 60px 0px 44px;
+  
+  position: relative;
+}
+.listItem:after {
+  display:block;
+  content: "";
+  padding-bottom: 40px;
+  border-bottom: solid 4px rgb(0, 0, 0);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.listItem:hover:after {
+  transform: scaleX(1);
+}
+ /* .listItem {
+  display: inline;
+  margin-right: 30px;
+  font-size: 17px;
+  color: rgb(78, 74, 74);
+  cursor: pointer;
+  padding: 40px 0px 44px;
+}
+
+.listItem:hover {
+  border-bottom: solid 3px rgb(0, 0, 0);
+  transition: all 0.2s ease;
+}  */
+.hamburger {
+  display: none;
+}
+.menu {
+  display: none;
+}
+.h{
+  color: white;
+  text-decoration: none;
+font-size: 40px;
 
 }
-.logo{
-    /* width: 110px; */
-    height: 50px;
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .containers {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px 0px 25px 0;
+    width: 162vh;
+    background-color: aqua;
+    background: url(https://tteld.com/assets/images/custom/footerBg.jpg);
+  }
+  .eld {
+    width: 770px;
+    height: 100%;
+    margin: 30px 30px 30px 0;
+    padding-left: 20px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .logo {
+    height: 120px;
+  }
+  .list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    height: 75px;
+    padding: 16px;
+    margin-right: 20px;
+    border: solid 1px #ff9d00;
+    cursor: pointer;
+  }
+  .line {
+    width: 100%;
+    height: 4px;
+    background-color: #ffb94a;
+  }
+
+  .menu {
+    position: fixed;
+    height: 360px;
+    background-color: #2c303d;
+    top: 240px;
+    margin: 0;
+    padding: 10;
+    font-weight: bold;
+    color: lightgray;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    background-color: rgb(54, 52, 52);
+    transition: all 1s ease;
+  }
+
+  .menuItem {
+    font-size: 30px;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
+  }
 }
-.listItem{
-    display: inline;
-    margin-right: 30px;
-    font-size: 17px;
-    color: rgb(78, 74, 74);
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .containers {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px 0 25px 20px;
+    width: 162vh;
+    background-color: aqua;
+  }
+  .eld {
+    width: 770px;
+    height: 100%;
+    margin: 30px 0 30px 0;
+    padding: 0px 20px 0 20px;
+    width: 162vh;
+
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .logo {
+    height: 140px;
+  }
+  .list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 130px;
+    height: 95px;
+    padding: 26px;
+
+    border: solid 1px #FFB94A;;
     cursor: pointer;
-    padding: 40px 0px 35px ;
-}
-.listItem:hover{
-    border-bottom: solid 3px rgb(0, 0, 0);
-    transition: all 0.2s ease;
+  }
+  .line {
+    width: 100%;
+    height: 4px;
+    background-color: #ffb94a;
+  }
+
+  .menu {
+    position: fixed;
+    height: 360px;
+    background-color: #2c303d;
+    top: 260px;
+    margin: 0;
+    padding: 10;
+    font-weight: bold;
+    color: lightgray;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    background-color: rgb(54, 52, 52);
+    transition: all 1s ease;
+  }
+
+  .menuItem {
+    font-size: 40px;
+    color: white;
+  }
+
 }
