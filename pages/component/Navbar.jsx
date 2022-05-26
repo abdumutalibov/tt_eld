@@ -5,7 +5,7 @@ const Navbar = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState("");
 
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
-  const [padding, setPadding] = useState(100);
+  const [padding, setPadding] = useState(30);
   const [boxShadow, setBoxShadow] = useState(0);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Navbar = () => {
       let paddingVar = 30 - backgroundTransparacyVar * 120;
       let boxShadowVar = backgroundTransparacyVar * 0.01;
       setBackgroundTransparacy(backgroundTransparacyVar);
-      setPadding(paddingVar);
+      // setPadding(paddingVar);
       setBoxShadow(boxShadowVar);
     }
   }, [clientWindowHeight]);
@@ -33,7 +33,7 @@ const Navbar = () => {
     style={{
       background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
       padding: `${padding}px 0px`,
-      boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
+      boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 1px 0px 0px`,
     }}
     
     >
@@ -46,7 +46,7 @@ const Navbar = () => {
           />
         </a>
         <ul className={styles.list}>
-          <li className={styles.listItem}>
+        <li  className={styles.listItem}>
             <a className={styles.a} href="#products/design">Home</a>
           </li>
           <li className={styles.listItem}>

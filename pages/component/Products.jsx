@@ -11,9 +11,9 @@ const Products = () => {
         <h2 className={styles.heading}>Our Products</h2>
         <p className={styles.desc}>
           Working hard for something we don’t care about is called
-          <br />
+          
           stressed, working hard for something we love is called
-          <br /> passion.
+          passion.
         </p>
         <div className={styles.line}></div>
         <div className={styles.mainPanel}>
